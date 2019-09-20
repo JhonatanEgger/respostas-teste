@@ -24,7 +24,7 @@
 
   
 
-- As linhas 4, 5 e 6 não dão erro pois seus valores são adicionados em um array no qual o seu tipo não é declarado ficando ArrayList<Object> então pode ser adicionado qualquer objeto, com esta falta de tipagem o array perde sua validação dos objetos que são adicionados nele.
+- As linhas 4, 5 e 6 não dão erro pois seus valores são adicionados em um array no qual o seu tipo não é declarado ficando ArrayList de object então pode ser adicionado qualquer objeto, com esta falta de tipagem o array perde sua validação dos objetos que são adicionados nele.
 
 4 
 
@@ -46,25 +46,32 @@
 
 6 
 
-    public String validateAge(String age) {
+[Ver código no projeto](https://github.com/JhonatanEgger/respostas-teste/blob/master/ProvaJava/src/br/com/exercicios/ex6/Father.java "Ver código no projeto")
+
+
+
+```java
+public String validateAge(String age) {
     
     String returnAge = null;
     
     try {
     
-    returnAge = isOld(Integer.parseInt(age))? "idoso": "jovem";
+    	returnAge = isOld(Integer.parseInt(age))? "idoso": "jovem";
     
-    System.out.println(returnAge);
+    	System.out.println(returnAge);
     
     } catch (NumberFormatException e) {
     
-    throw new NumberFormatException("O valor informado não é um valor numérico valido");
+    	throw new NumberFormatException("O valor informado não é um valor numérico valido");
     
     }
     
     return returnAge;
     
-    }
+}
+```
+
 
   
 
@@ -75,14 +82,20 @@
 
 8 
 
+[Ver código no projeto](https://github.com/JhonatanEgger/respostas-teste/blob/master/ProvaJava/src/br/com/exercicios/ex8/TryCatchExamples.java "Ver código no projeto")
+
 - NullPointerException é a exceção lançada quando se tenta acessar um objeto, variavel ou propriedade ainda não instanciado.
 
-      String nullPointer = null;    
-      nullPointer.toUpperCase();
-      
-    finally {
-    	System.out.println("Finally");
-    }
+```java
+String nullPointer = null;    
+nullPointer.toUpperCase();
+```
+  
+```java
+finally {
+	System.out.println("Finally");
+}
+```
 
   
 
@@ -92,9 +105,17 @@
   
 
 10 
--  (int) Math.round(x);
+
+[Ver código no projeto](https://github.com/JhonatanEgger/respostas-teste/blob/master/ProvaJava/src/br/com/exercicios/ex10/Main.java "Ver código no projeto")
+```java
+(int) Math.round(x);
+```
 
   
 
 11 
--	x = x.setScale(2, 1);
+
+[Ver código no projeto](https://github.com/JhonatanEgger/respostas-teste/blob/master/ProvaJava/src/br/com/exercicios/ex11/Main.java "Ver código no projeto")
+```java
+x = x.setScale(2, 1);
+```
